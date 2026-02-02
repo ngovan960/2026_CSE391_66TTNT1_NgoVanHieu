@@ -1,0 +1,19 @@
+.container {
+    width: 30%;
+    margin: auto;
+    font-family: sans-serif;
+}
+label {
+    
+    font-weight: 500;
+    text-align: start;
+    
+}
+.form-group {
+    display: flex;
+    justify-content: space-between;
+}
+.radio-group {
+    display: flex;
+    flex-direction: column;
+}
