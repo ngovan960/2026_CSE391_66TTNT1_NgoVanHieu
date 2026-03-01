@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+  background-color: #2b0d2b; 
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#page-logo a {
+  font-family: "Oleo Script", cursive;
+  font-size: 26px;
+  color: #ffd900;
+  text-transform: uppercase;
+}
+
+nav ul {
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  color: #ffd900;
+  font-weight: 500;
+}
+
+/* ===== HERO ===== */
+#hero {
+  height: 500px;
+  background-image: url("ocean.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero-content {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px 60px;
+  border-radius: 8px;
+  text-align: center;
+  color: white;
+}
+
+#hero-content h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 32px;
+  margin: 0;
+  text-transform: uppercase;
+}
+#hero-content p {
+    text-transform: uppercase;
+    color: gray;
+}
+
+#hero-content p {
+  margin: 10px 0 20px 0;
+}
+
+#hero-content a {
+  background-color: #ffd900;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+#hero-content img {
+  display: none;
+}
+
+/* ===== HIGHLIGHTS ===== */
+#highlights {
+  background: linear-gradient(to bottom, #b7d8d6, #cdeae7);
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#highlights h2 {
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  color: #333;
+}
+
+
+
+#destinations {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.destination {
+  width: 380px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.destination img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.destination p {
+  padding: 10px;
+  margin: 0;
+  color: #444;
+}
+
+.destination strong {
+  color: #00ffc8;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: black;
+  padding: 20px 0;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+footer img {
+  width: 30px;
+  height: 30px;
+}
