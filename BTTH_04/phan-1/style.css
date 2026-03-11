@@ -1,0 +1,201 @@
+/* ===== STYLE.CSS - QUẢN LÝ ĐIỂM SINH VIÊN ===== */
+
+/* --- LAYOUT CƠ BẢN --- */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.wrapper {
+    width: 800px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* --- KHUNG NHẬP LIỆU THÊM SINH VIÊN --- */
+.input-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+    padding: 15px;
+    background: #e9ecef;
+    border-radius: 8px;
+}
+
+.input-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+.input-form input[type="text"] {
+    flex: 3;
+}
+
+.input-form input[type="number"] {
+    flex: 1;
+}
+
+.btn-add {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-add:hover {
+    background-color: #0056b3;
+}
+
+/* --- KHUNG TÌM KIẾM --- */
+.search-form {
+    margin-bottom: 20px;
+    padding: 10px 0;
+}
+
+.search-form input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.search-form input:focus {
+    border-color: #007bff;
+}
+
+/* --- KHUNG LỌC THEO XẾP LOẠI --- */
+.filter-form {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.filter-form label {
+    font-weight: bold;
+    color: #333;
+}
+
+.filter-form select {
+    padding: 8px 12px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+    cursor: pointer;
+    transition: border-color 0.3s;
+}
+
+.filter-form select:focus {
+    border-color: #007bff;
+}
+
+/* --- BẢNG DỮ LIỆU --- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #dee2e6;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #343a40;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+/* Cột điểm có thể sắp xếp */
+th.sortable {
+    cursor: pointer;
+    user-select: none;
+}
+
+th.sortable:hover {
+    background-color: #495057;
+}
+
+.sort-arrow {
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+/* --- NÚT XÓA --- */
+.btn-del {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.btn-del:hover {
+    background-color: #c82333;
+}
+
+/* --- XẾP LOẠI SINH VIÊN --- */
+.xeploai-gioi {
+    color: green;
+    font-weight: bold;
+}
+
+.xeploai-kha {
+    color: blue;
+    font-weight: bold;
+}
+
+.xeploai-trungbinh {
+    color: orange;
+    font-weight: bold;
+}
+
+.xeploai-yeu {
+    color: red;
+    font-weight: bold;
+}
+
+/* Tô màu hàng có điểm < 5.0 */
+.row-low-score {
+    background-color: #ffeb99 !important;
+}
+
+/* --- PHẦN THỐNG KÊ --- */
+.statistics {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e7f3ff;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.statistics p {
+    margin: 5px 0;
+    font-size: 16px;
+    font-weight: bold;
+}

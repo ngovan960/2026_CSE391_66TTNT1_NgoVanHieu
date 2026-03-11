@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Giao Diện Quản Lý Điểm</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <h2>Quản Lý Điểm Sinh Viên</h2>
+
+        <div class="input-form">
+            <input type="text" placeholder="Nhập họ tên..." id="name" autofocus>
+            <input type="number" placeholder="Điểm (0-10)" id="score" min="0" max="10">
+            <button class="btn-add" id="add-btn">Thêm</button>
+        </div>
+
+        <div class="search-form">
+            <input type="text" placeholder="🔍 Tìm kiếm sinh viên..." id="search">
+        </div>
+
+        <div class="filter-form">
+            <label for="classification-filter">Lọc theo xếp loại:</label>
+            <select id="classification-filter">
+                <option value="">Tất cả</option>
+                <option value="Giỏi">Giỏi</option>
+                <option value="Khá">Khá</option>
+                <option value="Trung bình">Trung bình</option>
+                <option value="Yếu">Yếu</option>
+            </select>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Họ tên</th>
+                    <th class="sortable" id="score-header">Điểm <span class="sort-arrow"></span></th>
+                    <th>Xếp loại</th>
+                    <th>Thao tác</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+                <!-- Dữ liệu sẽ được render bằng JavaScript -->
+            </tbody>
+        </table>
+
+        <div class="statistics">
+            <p id="sum-student">Thống kê: 0 sinh viên</p>
+            <p id="avg">Điểm trung bình: 0.00</p>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
