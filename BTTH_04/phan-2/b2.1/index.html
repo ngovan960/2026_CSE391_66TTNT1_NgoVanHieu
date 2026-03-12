@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Đăng Ký Tài Khoản</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-wrapper">
+            <!-- Form Đăng Ký -->
+            <form id="registerForm" class="register-form">
+                <h1>Đăng Ký Tài Khoản</h1>
+                <p class="subtitle">Vui lòng điền đầy đủ thông tin bên dưới</p>
+
+                <!-- Họ và tên -->
+                <div class="form-group">
+                    <label for="fullname">Họ và tên *</label>
+                    <input 
+                        type="text" 
+                        id="fullname" 
+                        name="fullname" 
+                        placeholder="Nhập họ và tên (≥ 3 ký tự)"
+                    >
+                    <span class="error-message" id="fullname-error"></span>
+                </div>
+
+                <!-- Email -->
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        placeholder="name@domain.com"
+                    >
+                    <span class="error-message" id="email-error"></span>
+                </div>
+
+                <!-- Số điện thoại -->
+                <div class="form-group">
+                    <label for="phone">Số điện thoại *</label>
+                    <input 
+                        type="text" 
+                        id="phone" 
+                        name="phone" 
+                        placeholder="Nhập 10 chữ số, bắt đầu bằng 0"
+                    >
+                    <span class="error-message" id="phone-error"></span>
+                </div>
+
+                <!-- Mật khẩu -->
+                <div class="form-group">
+                    <label for="password">Mật khẩu *</label>
+                    <input 
+                        type="password" 
+                        id="password" 
+                        name="password" 
+                        placeholder="≥ 8 ký tự, 1 chữ hoa, 1 chữ thường, 1 số"
+                    >
+                    <span class="error-message" id="password-error"></span>
+                </div>
+
+                <!-- Xác nhận mật khẩu -->
+                <div class="form-group">
+                    <label for="confirmPassword">Xác nhận mật khẩu *</label>
+                    <input 
+                        type="password" 
+                        id="confirmPassword" 
+                        name="confirmPassword" 
+                        placeholder="Nhập lại mật khẩu"
+                    >
+                    <span class="error-message" id="confirmPassword-error"></span>
+                </div>
+
+                <!-- Giới tính -->
+                <div class="form-group">
+                    <label>Giới tính *</label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="gender" value="male"> Nam
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="gender" value="female"> Nữ
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="gender" value="other"> Khác
+                        </label>
+                    </div>
+                    <span class="error-message" id="gender-error"></span>
+                </div>
+
+                <!-- Điều khoản -->
+                <div class="form-group checkbox-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="terms" name="terms">
+                        Tôi đã đọc và đồng ý với <a href="#" class="terms-link">điều khoản dịch vụ</a> *
+                    </label>
+                    <span class="error-message" id="terms-error"></span>
+                </div>
+
+                <!-- Nút submit -->
+                <button type="submit" class="btn-submit">Đăng Ký</button>
+            </form>
+
+            <!-- Thông báo thành công -->
+            <div id="successMessage" class="success-message" style="display: none;">
+                <div class="success-content">
+                    <h2>🎉 Đăng Ký Thành Công!</h2>
+                    <p>Chào mừng, <strong id="successName"></strong>!</p>
+                    <p>Tài khoản của bạn đã được tạo thành công. Bạn có thể đăng nhập ngay bây giờ.</p>
+                    <button type="button" class="btn-reset" onclick="location.reload()">Đăng Ký Tài Khoản Mới</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
